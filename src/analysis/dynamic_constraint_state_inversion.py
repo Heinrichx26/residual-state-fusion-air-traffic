@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from dataclasses import dataclass
 from math import log
 from pathlib import Path
@@ -16,24 +17,36 @@ from smoke_open_fusion_topics import weighted_mean
 
 
 PROJECT = Path(__file__).resolve().parents[2]
-RAW_ADVISORY = PROJECT / "data" / "raw" / "faa_atcscc_advisories"
-MAIN_2025_PANEL = PROJECT / "results" / "experiments" / "atcscc_full_year_windows" / "airport_hour_panel_with_windows.csv"
-MAIN_2024_PANEL = (
-    PROJECT
-    / "results"
-    / "experiments"
-    / "supplemental_validation"
-    / "cross_year_2024"
-    / "full_2024_airport_hour_panel.csv"
-)
-EXTENDED_2025_PANEL = (
-    PROJECT
-    / "results"
-    / "experiments"
-    / "supplemental_validation"
-    / "extended_airports_2025"
-    / "full_30_airports_2025_airport_hour_panel.csv"
-)
+
+
+def set_project_root(project_root: str | Path | None) -> Path:
+    """Point analysis scripts at a reconstructed project root when data live outside this release package."""
+    global PROJECT, ROOT_OUT, RAW_ADVISORY, MAIN_2025_PANEL, MAIN_2024_PANEL, EXTENDED_2025_PANEL
+    root = project_root or os.environ.get("DCSI_PROJECT_ROOT")
+    PROJECT = Path(root).resolve() if root else Path(__file__).resolve().parents[2]
+    ROOT_OUT = PROJECT / "results" / "experiments" / "fusion_framework_strengthening"
+    RAW_ADVISORY = PROJECT / "data" / "raw" / "faa_atcscc_advisories"
+    MAIN_2025_PANEL = PROJECT / "results" / "experiments" / "atcscc_full_year_windows" / "airport_hour_panel_with_windows.csv"
+    MAIN_2024_PANEL = (
+        PROJECT
+        / "results"
+        / "experiments"
+        / "supplemental_validation"
+        / "cross_year_2024"
+        / "full_2024_airport_hour_panel.csv"
+    )
+    EXTENDED_2025_PANEL = (
+        PROJECT
+        / "results"
+        / "experiments"
+        / "supplemental_validation"
+        / "extended_airports_2025"
+        / "full_30_airports_2025_airport_hour_panel.csv"
+    )
+    return PROJECT
+
+
+set_project_root(None)
 
 MAIN_10 = ["ATL", "CLT", "DEN", "DFW", "EWR", "JFK", "LAX", "LGA", "ORD", "SFO"]
 EXTENDED_30 = [
@@ -125,6 +138,12 @@ def parse_months(text: str) -> list[int]:
         else:
             months.append(int(part))
     return sorted({m for m in months if 1 <= m <= 12})
+
+
+def parse_airports(text: str) -> list[str] | None:
+    if text.strip().upper() in {"ALL", "*"}:
+        return None
+    return [x.strip().upper() for x in text.split(",") if x.strip()]
 
 
 def parse_float_grid(text: str) -> list[float]:
@@ -568,7 +587,11 @@ def write_assessment(out: Path, gains: pd.DataFrame, deciles: pd.DataFrame, plac
     high = deciles[deciles["state_decile"].eq(10)].iloc[0]
     delay_ratio = float(high["delay_rate"] / low["delay_rate"]) if float(low["delay_rate"]) > 0 else np.nan
     cancel_ratio = float(high["cancel_rate"] / low["cancel_rate"]) if float(low["cancel_rate"]) > 0 else np.nan
-    strongest_transfer = transfer[(transfer["model"].eq("dynamic_state"))].copy()
+    strongest_transfer = (
+        transfer[(transfer["model"].eq("dynamic_state"))].copy()
+        if not transfer.empty and "model" in transfer.columns
+        else pd.DataFrame()
+    )
     top_reason = reason.head(1).iloc[0] if not reason.empty else None
     peak_summary = ""
     if not peaks.empty:
@@ -600,11 +623,12 @@ def write_assessment(out: Path, gains: pd.DataFrame, deciles: pd.DataFrame, plac
 
 def run(args: argparse.Namespace) -> None:
     months = parse_months(args.months)
+    airports = parse_airports(args.airports) or MAIN_10
     rho_grid = parse_float_grid(args.rho_grid)
     out = ROOT_OUT / args.output_name
     out.mkdir(parents=True, exist_ok=True)
 
-    main_2025 = load_panel(MAIN_2025_PANEL, 2025, months, MAIN_10)
+    main_2025 = load_panel(MAIN_2025_PANEL, 2025, months, airports)
     metrics, predictions, rho_selection = evaluate_leave_month(main_2025, months, rho_grid, MAIN_CATS)
     gains = build_gain_table(metrics)
     rho_global = global_rho_from_selection(rho_selection)
@@ -615,7 +639,7 @@ def run(args: argparse.Namespace) -> None:
     transfer_rho = []
     if args.include_transfer:
         use_months_2024 = months
-        main_2024 = load_panel(MAIN_2024_PANEL, 2024, use_months_2024, MAIN_10)
+        main_2024 = load_panel(MAIN_2024_PANEL, 2024, use_months_2024, airports)
         metrics_2425, rho_2425 = train_test_transfer(main_2024, main_2025, rho_grid, MAIN_CATS, "train2024_test2025")
         transfer_metrics.append(metrics_2425)
         transfer_rho.append(rho_2425)
@@ -628,7 +652,7 @@ def run(args: argparse.Namespace) -> None:
     transfer_gain = transfer_gains(transfer_all) if not transfer_all.empty else pd.DataFrame()
     transfer_rho_all = pd.concat(transfer_rho, ignore_index=True) if transfer_rho else pd.DataFrame()
 
-    events = load_events(2025, months, MAIN_10)
+    events = load_events(2025, months, airports)
     event_curve, event_peaks = event_peak_tables(main_2025, events, rho_global)
     reason_memory = reason_memory_table(main_2025, events, rho_global)
 
@@ -650,11 +674,15 @@ def run(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--project-root", default=None, help="Project root containing reconstructed data/ and results/ directories.")
     parser.add_argument("--months", default="1,7,12")
+    parser.add_argument("--airports", default="ATL,ORD")
     parser.add_argument("--rho-grid", default=",".join(str(x) for x in RHO_GRID_DEFAULT))
     parser.add_argument("--output-name", default="dynamic_constraint_state_inversion_smoke")
     parser.add_argument("--include-transfer", action="store_true")
-    run(parser.parse_args())
+    args = parser.parse_args()
+    set_project_root(args.project_root)
+    run(args)
 
 
 if __name__ == "__main__":

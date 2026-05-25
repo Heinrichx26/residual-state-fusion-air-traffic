@@ -1,0 +1,41 @@
+{
+  "schema_name": "dcsi_airport_hour_knowledge_object",
+  "description": "Machine-readable fields for the DCSI operational digital-thread airport-hour object.",
+  "primary_key": ["airport", "utc_hour"],
+  "entities": {
+    "AirportHour": ["airport", "utc_hour", "month", "local_hour", "day_of_week"],
+    "PhysicalObservation": ["weather_score", "mild_weather_abs", "wind_speed_mps", "visibility_km", "ceiling_m", "temperature_c"],
+    "ManagementAction": ["active_minutes", "post_3h_minutes", "active_strong", "post_3h_strong"],
+    "PlannedDemand": ["scheduled_arrivals_proxy", "arrival_bank_intensity"],
+    "ConstraintState": ["dynamic_constraint_state", "dynamic_recovery_state", "dynamic_mild_constraint", "dynamic_state_delta"],
+    "OutcomeClosure": ["arrivals", "arr_delay60_count", "cancel_count", "arr_delay60_rate", "cancel_rate"],
+    "ReasonFamily": ["constraint_type"]
+  },
+  "source_role_rules": [
+    {
+      "rule_id": "R1",
+      "rule": "ManagementAction updates ConstraintState",
+      "implementation": "active_minutes are converted to an action impulse and propagated through the selected memory coefficient"
+    },
+    {
+      "rule_id": "R2",
+      "rule": "PhysicalObservation contextualizes ConstraintState",
+      "implementation": "weather fields enter scoring and interpretation as context fields"
+    },
+    {
+      "rule_id": "R3",
+      "rule": "PlannedDemand contextualizes ConstraintState",
+      "implementation": "scheduled workload fields enter scoring and transfer checks as context fields"
+    },
+    {
+      "rule_id": "R4",
+      "rule": "OutcomeClosure validates ConstraintState",
+      "implementation": "delay and cancellation outcomes are excluded from state recursion and used for held-out validation"
+    },
+    {
+      "rule_id": "R5",
+      "rule": "ManagementAction hasReason ReasonFamily",
+      "implementation": "advisory reason text partitions action impulses for semantic constraint-memory diagnostics"
+    }
+  ]
+}

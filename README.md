@@ -19,10 +19,10 @@ Large raw source files are not redistributed. The `manifests/` directory records
 
 ## Repository layout
 
-- `data_schema/`: digital-thread entity definitions, source fields, knowledge relations, source-role rules, and validation split identifiers.
+- `data_schema/`: digital-thread entity definitions, source fields, knowledge relations, source-role rules, rule-execution example, and validation split identifiers.
 - `docs/`: data-source and reproduction notes.
 - `src/data/`: source acquisition and parsing scripts.
-- `src/analysis/`: airport-hour panel construction, dynamic constraint-state inversion (DCSI), knowledge-guided strengthening baselines, optional state-space diagnostics, negative controls, transfer checks, and package verification.
+- `src/analysis/`: airport-hour panel construction, dynamic constraint-state inversion (DCSI), online lead-time validation, knowledge-guided strengthening baselines, optional state-space diagnostics, negative controls, transfer checks, and package verification.
 - `src/plotting/`: figure builders that read archived result tables.
 - `results/benchmark/`: task definitions and baseline scores for the DCSI monitoring benchmark.
 - `results/scorecards/`: archived DCSI result tables, strong advisory-feature references, paired bootstrap intervals, and paper scorecards.
@@ -44,30 +44,48 @@ python src/analysis/verify_release_package.py
 
 The verifier checks the README, environment file, digital-thread schemas, task definitions, split identifiers, DCSI scorecards, negative-control tables, and transfer tables.
 
+If the reconstructed source panels are stored outside this release package, point the scripts at that project root before running analysis commands:
+
+```powershell
+$env:DCSI_PROJECT_ROOT="<path-to-reconstructed-project>"
+```
+
+For bash:
+
+```bash
+export DCSI_PROJECT_ROOT="/path/to/reconstructed/project"
+```
+
 Run the DCSI smoke path before full reconstruction:
 
 ```bash
 python src/analysis/dynamic_constraint_state_inversion.py --months 1,7,12 --airports ATL,ORD --output-name dcsi_smoke_2025
-python src/analysis/dynamic_constraint_state_negative_controls.py --input-name dcsi_smoke_2025 --output-name dcsi_negative_controls_smoke
+python src/analysis/dynamic_constraint_state_negative_controls.py --source-output dcsi_smoke_2025 --months 1,7,12 --airports ATL,ORD --output-name dcsi_negative_controls_smoke
 ```
 
 Rebuild the full DCSI result tables after reconstructing the public source panels:
 
 ```bash
 python src/analysis/dynamic_constraint_state_inversion.py --months 1-12 --airports ATL,CLT,DEN,DFW,EWR,JFK,LAX,LGA,ORD,SFO --output-name dynamic_constraint_state_inversion_full_2025 --rho-grid 0,0.25,0.50,0.70,0.85,0.90,0.93,0.95,0.97,0.985
-python src/analysis/dynamic_constraint_state_negative_controls.py --input-name dynamic_constraint_state_inversion_full_2025 --output-name dynamic_constraint_state_negative_controls
+python src/analysis/dynamic_constraint_state_negative_controls.py --source-output dynamic_constraint_state_inversion_full_2025 --months 1-12 --airports ATL,CLT,DEN,DFW,EWR,JFK,LAX,LGA,ORD,SFO --output-name dynamic_constraint_state_negative_controls
 ```
 
 Run the knowledge-guided strengthening table after the full DCSI table exists:
 
 ```bash
-python src/analysis/dcsi_kbs_strengthening.py --input-name dynamic_constraint_state_inversion_full_2025 --output-name dcsi_kbs_strengthening_full --bootstrap 300
+python src/analysis/dcsi_kbs_strengthening.py --months 1-12 --airports ATL,CLT,DEN,DFW,EWR,JFK,LAX,LGA,ORD,SFO --output-name dcsi_kbs_strengthening_full --bootstrap 300
+```
+
+Run the online lead-time validation after the advisory issue-time table has been reconstructed:
+
+```bash
+python src/analysis/dcsi_online_lead_validation.py --months 1-12 --airports ATL,CLT,DEN,DFW,EWR,JFK,LAX,LGA,ORD,SFO --horizons 1,3,6 --rho-grid 0.90,0.95,0.97 --output-name online_lead_full_2025
 ```
 
 Run the optional state-space diagnostic on a small panel when comparing DCSI with a hidden-state reference:
 
 ```bash
-python src/analysis/dcsi_hmm_state_reference.py --input-name dynamic_constraint_state_inversion_full_2025 --months 1,7,12 --airports ATL,ORD --output-name dcsi_hmm_state_reference_smoke
+python src/analysis/dcsi_hmm_state_reference.py --months 1,7,12 --airports ATL,ORD --output-name dcsi_hmm_state_reference_smoke
 ```
 
 Rebuild figures from archived result tables:
@@ -84,9 +102,10 @@ The package defines five evaluation tasks:
 2. Long-delay risk scoring.
 3. Cancellation risk scoring.
 4. Action-trajectory negative controls.
-5. Cross-year and airport-group transfer.
+5. Online lead-time monitoring.
+6. Cross-year and airport-group transfer.
 
-The package includes fixed split definitions for leave-one-month, 2024-to-2025, main-to-extension airport transfer, shifted timing, airport-rotated actions, time-reversed actions, and event timing. Selected scorecards include DCSI model gains, strong advisory-feature references, paired bootstrap intervals, fold metrics, memory-parameter selection, state decile closure, semantic constraint memory, shifted timing diagnostics, negative controls, transfer checks, and event peak timing.
+The package includes fixed split definitions for leave-one-month, 2024-to-2025, main-to-extension airport transfer, online lead-time horizons, shifted timing, airport-rotated actions, time-reversed actions, and event timing. Selected scorecards include DCSI model gains, online lead-time gains, strong advisory-feature references, paired bootstrap intervals, fold metrics, memory-parameter selection, state decile closure, semantic constraint memory, shifted timing diagnostics, negative controls, transfer checks, and event peak timing.
 
 ## Reproducibility note
 

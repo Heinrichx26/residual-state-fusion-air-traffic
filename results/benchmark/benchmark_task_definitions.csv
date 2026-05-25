@@ -3,4 +3,5 @@ Task 1,Dynamic constraint-state monitoring,"Infer airport-hour constraint state 
 Task 2,Long-delay risk scoring,"Predict the probability that scheduled arrivals in an airport-hour include arrivals delayed at least 60 minutes; evaluate AUC, Brier score, and fold gains."
 Task 3,Cancellation risk scoring,"Predict the probability that scheduled arrivals in an airport-hour include cancellations; evaluate AUC, Brier score, and fold gains."
 Task 4,Action-trajectory negative controls,"Recompute DCSI after airport rotation, time reversal, and shifted timing to test action-link specificity."
-Task 5,Transfer validation,"Train or select DCSI state rules across years and airport groups, then evaluate whether dynamic-state gains remain positive."
+Task 5,Online lead-time monitoring,"Use issue/start/current-hour information to score delayed outcome closure at 1, 3, and 6 hour horizons."
+Task 6,Transfer validation,"Train or select DCSI state rules across years and airport groups, then evaluate whether dynamic-state gains remain positive."

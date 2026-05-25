@@ -20,6 +20,10 @@ memory_selection,combined,implied_half_life_hours,13.5,rho 0.95,dcsi_rho_selecti
 state_decile_closure,long_arrival_delay,top_bottom_ratio,5.00,top delay 0.280,dcsi_deciles.csv
 state_decile_closure,cancellation,top_bottom_ratio,13.42,top cancel 0.0847,dcsi_deciles.csv
 event_timing,combined,median_state_peak_hour,6,median outcome peak hour 5,dcsi_event_peak_summary.csv
+online_lead,long_arrival_delay,relation_dcsi_1h_gain_vs_baseline,+0.049,AUC 0.719,online_lead_gains.csv
+online_lead,cancellation,relation_dcsi_1h_gain_vs_baseline,+0.117,AUC 0.784,online_lead_gains.csv
+online_lead,long_arrival_delay,relation_dcsi_6h_gain_vs_baseline,+0.028,AUC 0.682,online_lead_gains.csv
+online_lead,cancellation,relation_dcsi_6h_gain_vs_baseline,+0.076,AUC 0.724,online_lead_gains.csv
 negative_control,cancellation,real_action_auc,0.769,airport-rotated 0.748; time-reversed 0.739,dcsi_negative_control_metrics.csv
 transfer,long_arrival_delay,train2024_test2025_gain_vs_fixed,+0.007,DCSI AUC 0.726,dcsi_transfer_gains.csv
 transfer,cancellation,train2024_test2025_gain_vs_fixed,+0.024,DCSI AUC 0.771,dcsi_transfer_gains.csv

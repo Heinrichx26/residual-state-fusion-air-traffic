@@ -15,6 +15,8 @@ from dynamic_constraint_state_inversion import (
     fit_predict,
     load_panel,
     model_rows,
+    parse_airports,
+    parse_months,
 )
 from fusion_prediction_increment import evaluate
 from fusion_strengthening_common import ROOT_OUT
@@ -83,7 +85,9 @@ def run(args: argparse.Namespace) -> None:
     source = ROOT_OUT / args.source_output
     out = ROOT_OUT / args.output_name
     out.mkdir(parents=True, exist_ok=True)
-    panel = load_panel(MAIN_2025_PANEL, 2025, list(range(1, 13)), MAIN_10)
+    months = parse_months(args.months)
+    airports = parse_airports(args.airports) or MAIN_10
+    panel = load_panel(MAIN_2025_PANEL, 2025, months, airports)
     rho_selected = selected_rho_table(source / "dcsi_rho_selection.csv")
     controls = [
         evaluate_control(panel, rho_selected, "real_action"),
@@ -116,6 +120,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source-output", default="dynamic_constraint_state_inversion_full_2025")
     parser.add_argument("--output-name", default="dynamic_constraint_state_negative_controls")
+    parser.add_argument("--months", default="1-12")
+    parser.add_argument("--airports", default="ATL,CLT,DEN,DFW,EWR,JFK,LAX,LGA,ORD,SFO")
     run(parser.parse_args())
 
 

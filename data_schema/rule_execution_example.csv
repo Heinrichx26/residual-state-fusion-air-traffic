@@ -1,0 +1,9 @@
+trace_order,trace_element,tuple_or_rule,source_role,operational_meaning
+1,Common time object,"AirportHour(EWR, 2025-02-06 12:00 UTC)",airport-hour,Airport-hour node that receives source records.
+2,Action relation,ManagementAction actsOn AirportHour,traffic-management action,"The GDP interval begins at 12:26 UTC and contributes 34 active minutes to the 12:00-13:00 UTC hour."
+3,Action impulse,"u=min(1,34/60)=0.567",traffic-management action,Active-overlap minutes become the normalized state impulse.
+4,State update rule,ManagementAction updatesState ConstraintState,inferred constraint state,The impulse updates the DCSI state through the selected recovery memory.
+5,Context rule,PhysicalObservation contextualizesState ConstraintState,physical observation,Surface-weather fields remain context variables and supply no action impulse.
+6,Demand context,PlannedDemand scheduledFor AirportHour,planned workload,Scheduled arrivals and arrival-bank intensity remain workload context variables.
+7,Semantic relation,ManagementAction hasReason ReasonFamily,reason family,Parsed advisory reason text maps the action to a semantic constraint family.
+8,Closure rule,OutcomeClosure validates ConstraintState,outcome closure,BTS delay and cancellation fields enter after outcome closure for validation and scoring.

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import numpy as np
@@ -9,7 +10,7 @@ from full_year_atcscc_window_experiments import scheduled_utc_hour
 from smoke_open_fusion_topics import AIRPORT_TZ, read_bts_month
 
 
-PROJECT = Path(__file__).resolve().parents[2]
+PROJECT = Path(os.environ.get("DCSI_PROJECT_ROOT", Path(__file__).resolve().parents[2])).resolve()
 MAIN = PROJECT / "results" / "experiments" / "atcscc_full_year_windows"
 ROOT_OUT = PROJECT / "results" / "experiments" / "fusion_framework_strengthening"
 PANEL_FILE = MAIN / "airport_hour_panel_with_windows.csv"

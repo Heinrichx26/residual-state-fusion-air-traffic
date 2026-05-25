@@ -13,6 +13,9 @@ State closure,long-delay top/bottom decile ratio,5.00,reported,dcsi_deciles.csv
 State closure,cancellation top/bottom decile ratio,13.42,reported,dcsi_deciles.csv
 Event timing,median state peak hour,6,reported,dcsi_event_peak_summary.csv
 Event timing,median long-delay and cancellation peak hour,5/5,reported,dcsi_event_peak_summary.csv
+Online lead-time,1 h relation-DCSI gain vs online baseline,+0.049/+0.117,reported,online_lead_gains.csv
+Online lead-time,6 h relation-DCSI gain vs online baseline,+0.028/+0.076,reported,online_lead_gains.csv
+Online state closure,1 h top/bottom state ratios,4.44/12.11,reported,online_lead_state_diffs.csv
 Semantic memory,largest recovery-state area,weather constraint 72588,reported,dcsi_reason_memory.csv
 Negative control,cancellation real vs reversed AUC,0.769 vs 0.739,reported,dcsi_negative_control_metrics.csv
 Transfer,cross-year gains over fixed windows,+0.007/+0.024,reported,dcsi_transfer_gains.csv
