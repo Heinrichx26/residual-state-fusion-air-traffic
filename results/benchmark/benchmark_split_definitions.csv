@@ -1,0 +1,5 @@
+split,definition,role
+leave_one_month_2025,Train on 11 months of 2025 and test on the held-out month.,Main temporal generalization split
+external_year_2024_to_2025,Use 2024 as external-year validation for the 2025 main pattern.,Cross-year validation
+leave_one_airport_2025,Hold out one airport and evaluate airport-to-airport stability.,Airport generalization
+event_bootstrap_2025,Resample GDP or GS advisory events with replacement.,Event-level uncertainty

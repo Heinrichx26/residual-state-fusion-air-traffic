@@ -1,0 +1,100 @@
+airport,artifact,bytes,dataset,date,kind,month,records,source_file,station,status,url,year
+,data/raw/bts_on_time/bts_on_time_2024_11.zip,28149354,BTS On-Time Performance,,,11,,,,downloaded,https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2024_11.zip,2024
+ATL,data/raw/iem_asos/iem_asos_2024_11_ATL.csv,61829,IEM ASOS,,,11,,,ATL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+CLT,data/raw/iem_asos/iem_asos_2024_11_CLT.csv,61460,IEM ASOS,,,11,,,CLT,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+DEN,data/raw/iem_asos/iem_asos_2024_11_DEN.csv,63663,IEM ASOS,,,11,,,DEN,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+DFW,data/raw/iem_asos/iem_asos_2024_11_DFW.csv,61526,IEM ASOS,,,11,,,DFW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+EWR,data/raw/iem_asos/iem_asos_2024_11_EWR.csv,60863,IEM ASOS,,,11,,,EWR,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+JFK,data/raw/iem_asos/iem_asos_2024_11_JFK.csv,61303,IEM ASOS,,,11,,,JFK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+LAX,data/raw/iem_asos/iem_asos_2024_11_LAX.csv,60995,IEM ASOS,,,11,,,LAX,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+LGA,data/raw/iem_asos/iem_asos_2024_11_LGA.csv,60993,IEM ASOS,,,11,,,LGA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+ORD,data/raw/iem_asos/iem_asos_2024_11_ORD.csv,62485,IEM ASOS,,,11,,,ORD,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+BOS,data/raw/iem_asos/iem_asos_2025_11_BOS.csv,60314,IEM ASOS,,,11,,,BOS,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos/iem_asos_2024_11_SFO.csv,61276,IEM ASOS,,,11,,,SFO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+BWI,data/raw/iem_asos/iem_asos_2025_11_BWI.csv,61330,IEM ASOS,,,11,,,BWI,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DCA,data/raw/iem_asos/iem_asos_2025_11_DCA.csv,61588,IEM ASOS,,,11,,,DCA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DTW,data/raw/iem_asos/iem_asos_2025_11_DTW.csv,62248,IEM ASOS,,,11,,,DTW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+FLL,data/raw/iem_asos/iem_asos_2025_11_FLL.csv,60530,IEM ASOS,,,11,,,FLL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+HNL,data/raw/iem_asos/iem_asos_2025_11_HNL.csv,62247,IEM ASOS,,,11,,,PHNL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+IAD,data/raw/iem_asos/iem_asos_2025_11_IAD.csv,61103,IEM ASOS,,,11,,,IAD,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+IAH,data/raw/iem_asos/iem_asos_2025_11_IAH.csv,60553,IEM ASOS,,,11,,,IAH,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAS,data/raw/iem_asos/iem_asos_2025_11_LAS.csv,62090,IEM ASOS,,,11,,,LAS,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MCO,data/raw/iem_asos/iem_asos_2025_11_MCO.csv,60482,IEM ASOS,,,11,,,MCO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MDW,data/raw/iem_asos/iem_asos_2025_11_MDW.csv,62452,IEM ASOS,,,11,,,MDW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MIA,data/raw/iem_asos/iem_asos_2025_11_MIA.csv,60169,IEM ASOS,,,11,,,MIA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MSP,data/raw/iem_asos/iem_asos_2025_11_MSP.csv,62144,IEM ASOS,,,11,,,MSP,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+PHL,data/raw/iem_asos/iem_asos_2025_11_PHL.csv,61032,IEM ASOS,,,11,,,PHL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+PHX,data/raw/iem_asos/iem_asos_2025_11_PHX.csv,61678,IEM ASOS,,,11,,,PHX,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+RDU,data/raw/iem_asos/iem_asos_2025_11_RDU.csv,61224,IEM ASOS,,,11,,,RDU,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SAN,data/raw/iem_asos/iem_asos_2025_11_SAN.csv,60742,IEM ASOS,,,11,,,SAN,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SEA,data/raw/iem_asos/iem_asos_2025_11_SEA.csv,62956,IEM ASOS,,,11,,,SEA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SLC,data/raw/iem_asos/iem_asos_2025_11_SLC.csv,63678,IEM ASOS,,,11,,,SLC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+TPA,data/raw/iem_asos/iem_asos_2025_11_TPA.csv,59349,IEM ASOS,,,11,,,TPA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241101.csv,399,FAA ATCSCC advisories,2024-11-01,,,2,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241102.csv,81,FAA ATCSCC advisories,2024-11-02,,,0,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241107.csv,5901,FAA ATCSCC advisories,2024-11-07,,,36,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241105.csv,2223,FAA ATCSCC advisories,2024-11-05,,,13,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241104.csv,1751,FAA ATCSCC advisories,2024-11-04,,,10,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241103.csv,1055,FAA ATCSCC advisories,2024-11-03,,,6,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241106.csv,1686,FAA ATCSCC advisories,2024-11-06,,,10,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241109.csv,739,FAA ATCSCC advisories,2024-11-09,,,4,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241112.csv,81,FAA ATCSCC advisories,2024-11-12,,,0,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241108.csv,2538,FAA ATCSCC advisories,2024-11-08,,,15,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241110.csv,1380,FAA ATCSCC advisories,2024-11-10,,,8,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241111.csv,1230,FAA ATCSCC advisories,2024-11-11,,,7,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241114.csv,918,FAA ATCSCC advisories,2024-11-14,,,5,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241115.csv,768,FAA ATCSCC advisories,2024-11-15,,,4,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241113.csv,1228,FAA ATCSCC advisories,2024-11-13,,,7,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241118.csv,1249,FAA ATCSCC advisories,2024-11-18,,,7,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241117.csv,920,FAA ATCSCC advisories,2024-11-17,,,5,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241116.csv,1035,FAA ATCSCC advisories,2024-11-16,,,6,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241119.csv,404,FAA ATCSCC advisories,2024-11-19,,,2,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241120.csv,1424,FAA ATCSCC advisories,2024-11-20,,,8,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241122.csv,2856,FAA ATCSCC advisories,2024-11-22,,,17,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241123.csv,743,FAA ATCSCC advisories,2024-11-23,,,4,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241121.csv,4160,FAA ATCSCC advisories,2024-11-21,,,25,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241124.csv,1397,FAA ATCSCC advisories,2024-11-24,,,8,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241126.csv,733,FAA ATCSCC advisories,2024-11-26,,,4,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241125.csv,2025,FAA ATCSCC advisories,2024-11-25,,,12,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241127.csv,759,FAA ATCSCC advisories,2024-11-27,,,4,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241129.csv,240,FAA ATCSCC advisories,2024-11-29,,,1,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241130.csv,865,FAA ATCSCC advisories,2024-11-30,,,5,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/2024_11/parsed_20241128.csv,907,FAA ATCSCC advisories,2024-11-28,,,5,,,cached,https://www.fly.faa.gov/adv/adv_list,
+,data/raw/faa_atcscc_advisories/faa_atcscc_gdp_gs_reparsed_2024_v2.csv,756321,FAA ATCSCC advisories combined,,,,4574,,,parsed,https://www.fly.faa.gov/adv/adv_list,2024
+,data/raw/faa_atcscc_advisories/faa_atcscc_errors_reparsed_2024_v2.csv,28,FAA ATCSCC advisory parse errors,,,,0,,,parsed,https://www.fly.faa.gov/adv/adv_list,2024
+,data/raw/noaa_storm_events/StormEvents_details_2024.csv.gz,12693422,NOAA Storm Events,,details,,,StormEvents_details-ftp_v1.0_d2024_c20260421.csv.gz,,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2024_c20260421.csv.gz,2024
+,data/raw/noaa_storm_events/StormEvents_locations_2024.csv.gz,983881,NOAA Storm Events,,locations,,,StormEvents_locations-ftp_v1.0_d2024_c20260421.csv.gz,,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_locations-ftp_v1.0_d2024_c20260421.csv.gz,2024
+,data/raw/noaa_storm_events/StormEvents_details_2025.csv.gz,12582373,NOAA Storm Events,,details,,,StormEvents_details-ftp_v1.0_d2025_c20260323.csv.gz,,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2025_c20260323.csv.gz,2025
+,data/raw/noaa_storm_events/StormEvents_locations_2025.csv.gz,1216277,NOAA Storm Events,,locations,,,StormEvents_locations-ftp_v1.0_d2025_c20260323.csv.gz,,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_locations-ftp_v1.0_d2025_c20260323.csv.gz,2025
+,data/raw/iem_station_metadata/iem_stations_all.csv,396687,IEM station metadata,,,,,,,cached,https://mesonet.agron.iastate.edu/sites/networks.php?special=allasos&format=csv&nohtml,
+ATL,data/raw/iem_asos_neighbors/iem_asos_2025_11_ATL_FTY.csv,58907,IEM ASOS,,,11,,,FTY,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ATL,data/raw/iem_asos_neighbors/iem_asos_2025_11_ATL_PDK.csv,58833,IEM ASOS,,,11,,,PDK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ATL,data/raw/iem_asos_neighbors/iem_asos_2025_11_ATL_HMP.csv,59048,IEM ASOS,,,11,,,HMP,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+CLT,data/raw/iem_asos_neighbors/iem_asos_2025_11_CLT_AKH.csv,52632,IEM ASOS,,,11,,,AKH,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+CLT,data/raw/iem_asos_neighbors/iem_asos_2025_11_CLT_UZA.csv,58331,IEM ASOS,,,11,,,UZA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DEN,data/raw/iem_asos_neighbors/iem_asos_2025_11_DEN_CFO.csv,25243,IEM ASOS,,,11,,,CFO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+CLT,data/raw/iem_asos_neighbors/iem_asos_2025_11_CLT_JQF.csv,56519,IEM ASOS,,,11,,,JQF,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DEN,data/raw/iem_asos_neighbors/iem_asos_2025_11_DEN_BKF.csv,63591,IEM ASOS,,,11,,,BKF,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DEN,data/raw/iem_asos_neighbors/iem_asos_2025_11_DEN_APA.csv,62944,IEM ASOS,,,11,,,APA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DFW,data/raw/iem_asos_neighbors/iem_asos_2025_11_DFW_DAL.csv,61579,IEM ASOS,,,11,,,DAL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DFW,data/raw/iem_asos_neighbors/iem_asos_2025_11_DFW_ADS.csv,55177,IEM ASOS,,,11,,,ADS,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DFW,data/raw/iem_asos_neighbors/iem_asos_2025_11_DFW_GPM.csv,59074,IEM ASOS,,,11,,,GPM,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+EWR,data/raw/iem_asos_neighbors/iem_asos_2025_11_EWR_LDJ.csv,58613,IEM ASOS,,,11,,,LDJ,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+EWR,data/raw/iem_asos_neighbors/iem_asos_2025_11_EWR_JRB.csv,57736,IEM ASOS,,,11,,,JRB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+EWR,data/raw/iem_asos_neighbors/iem_asos_2025_11_EWR_NYC.csv,57892,IEM ASOS,,,11,,,NYC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+JFK,data/raw/iem_asos_neighbors/iem_asos_2025_11_JFK_LGA.csv,61177,IEM ASOS,,,11,,,LGA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+JFK,data/raw/iem_asos_neighbors/iem_asos_2025_11_JFK_JRB.csv,57736,IEM ASOS,,,11,,,JRB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+JFK,data/raw/iem_asos_neighbors/iem_asos_2025_11_JFK_NYC.csv,57892,IEM ASOS,,,11,,,NYC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAX,data/raw/iem_asos_neighbors/iem_asos_2025_11_LAX_HHR.csv,59335,IEM ASOS,,,11,,,HHR,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAX,data/raw/iem_asos_neighbors/iem_asos_2025_11_LAX_SMO.csv,59108,IEM ASOS,,,11,,,SMO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAX,data/raw/iem_asos_neighbors/iem_asos_2025_11_LAX_TOA.csv,32261,IEM ASOS,,,11,,,TOA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LGA,data/raw/iem_asos_neighbors/iem_asos_2025_11_LGA_NYC.csv,57892,IEM ASOS,,,11,,,NYC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LGA,data/raw/iem_asos_neighbors/iem_asos_2025_11_LGA_JRB.csv,57736,IEM ASOS,,,11,,,JRB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LGA,data/raw/iem_asos_neighbors/iem_asos_2025_11_LGA_TEB.csv,58430,IEM ASOS,,,11,,,TEB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ORD,data/raw/iem_asos_neighbors/iem_asos_2025_11_ORD_PWK.csv,60052,IEM ASOS,,,11,,,PWK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ORD,data/raw/iem_asos_neighbors/iem_asos_2025_11_ORD_MDW.csv,62452,IEM ASOS,,,11,,,MDW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ORD,data/raw/iem_asos_neighbors/iem_asos_2025_11_ORD_06C.csv,60431,IEM ASOS,,,11,,,06C,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos_neighbors/iem_asos_2025_11_SFO_HAF.csv,58378,IEM ASOS,,,11,,,HAF,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos_neighbors/iem_asos_2025_11_SFO_SQL.csv,47494,IEM ASOS,,,11,,,SQL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos_neighbors/iem_asos_2025_11_SFO_OAK.csv,60924,IEM ASOS,,,11,,,OAK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+

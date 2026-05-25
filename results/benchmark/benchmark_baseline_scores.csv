@@ -1,0 +1,27 @@
+benchmark_task,target,baseline_or_setting,primary_value,secondary_value,source_table
+held_out_scoring,long_arrival_delay,calendar_weather_demand_auc,0.670,0.0,dcsi_cv_gains.csv
+held_out_scoring,long_arrival_delay,fixed_window_auc,0.718,+0.048,dcsi_cv_gains.csv
+held_out_scoring,long_arrival_delay,dcsi_auc,0.726,+0.008 vs fixed,dcsi_cv_gains.csv
+held_out_scoring,long_arrival_delay,distributed_lag_24h_auc,0.725,+0.007 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,long_arrival_delay,time_since_action_auc,0.724,+0.007 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,long_arrival_delay,fixed_decay_auc,0.726,+0.008 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,long_arrival_delay,relation_augmented_dcsi_auc,0.727,+0.009 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,long_arrival_delay,lightgbm_tabular_auc,0.735,+0.018 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,cancellation,calendar_weather_demand_auc,0.670,0.0,dcsi_cv_gains.csv
+held_out_scoring,cancellation,fixed_window_auc,0.740,+0.070,dcsi_cv_gains.csv
+held_out_scoring,cancellation,dcsi_auc,0.769,+0.029 vs fixed,dcsi_cv_gains.csv
+held_out_scoring,cancellation,distributed_lag_24h_auc,0.761,+0.022 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,cancellation,time_since_action_auc,0.775,+0.035 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,cancellation,fixed_decay_auc,0.769,+0.029 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,cancellation,relation_augmented_dcsi_auc,0.778,+0.038 vs fixed,kbs_baseline_gains.csv
+held_out_scoring,cancellation,lightgbm_tabular_auc,0.794,+0.054 vs fixed,kbs_baseline_gains.csv
+memory_selection,combined,selected_rho,0.95,12 of 12 folds,dcsi_rho_selection.csv
+memory_selection,combined,implied_half_life_hours,13.5,rho 0.95,dcsi_rho_selection.csv
+state_decile_closure,long_arrival_delay,top_bottom_ratio,5.00,top delay 0.280,dcsi_deciles.csv
+state_decile_closure,cancellation,top_bottom_ratio,13.42,top cancel 0.0847,dcsi_deciles.csv
+event_timing,combined,median_state_peak_hour,6,median outcome peak hour 5,dcsi_event_peak_summary.csv
+negative_control,cancellation,real_action_auc,0.769,airport-rotated 0.748; time-reversed 0.739,dcsi_negative_control_metrics.csv
+transfer,long_arrival_delay,train2024_test2025_gain_vs_fixed,+0.007,DCSI AUC 0.726,dcsi_transfer_gains.csv
+transfer,cancellation,train2024_test2025_gain_vs_fixed,+0.024,DCSI AUC 0.771,dcsi_transfer_gains.csv
+transfer,long_arrival_delay,main10_extension20_gain_vs_fixed,+0.002,DCSI AUC 0.687,dcsi_transfer_gains.csv
+transfer,cancellation,main10_extension20_gain_vs_fixed,+0.012,DCSI AUC 0.686,dcsi_transfer_gains.csv

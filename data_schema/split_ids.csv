@@ -1,0 +1,9 @@
+split_name,unit,definition,primary_use
+leave_one_month,airport-hour,train on 11 months and evaluate the held-out month,held-out scoring and memory selection
+inner_month_selection,airport-hour,rotate one validation month inside each outer training fold,fold-wise rho selection
+external_2024_to_2025,airport-hour,train on 2024 and score 2025,cross-year transfer
+main10_to_extension20,airport-hour,train on 10 main airports and evaluate 20 extension airports,airport-group transfer
+shifted_timing,airport-hour,shift advisory action trajectories by plus or minus 7 and 14 days,timing diagnostic
+airport_rotated_action,airport-hour,assign each airport another airport's action trajectory,airport-link negative control
+time_reversed_action,airport-hour,reverse the action trajectory within each airport,temporal-order negative control
+event_timing,advisory event,aggregate airport-hours from six hours before to 18 hours after advisory start,event peak validation

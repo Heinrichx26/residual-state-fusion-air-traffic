@@ -1,0 +1,6 @@
+artifact,bytes,dataset,kind,source_file,status,url,year
+data/raw/noaa_storm_events/StormEvents_details_2024.csv.gz,12693422,NOAA Storm Events,details,StormEvents_details-ftp_v1.0_d2024_c20260421.csv.gz,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2024_c20260421.csv.gz,2024
+data/raw/noaa_storm_events/StormEvents_locations_2024.csv.gz,983881,NOAA Storm Events,locations,StormEvents_locations-ftp_v1.0_d2024_c20260421.csv.gz,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_locations-ftp_v1.0_d2024_c20260421.csv.gz,2024
+data/raw/noaa_storm_events/StormEvents_details_2025.csv.gz,12582373,NOAA Storm Events,details,StormEvents_details-ftp_v1.0_d2025_c20260323.csv.gz,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_details-ftp_v1.0_d2025_c20260323.csv.gz,2025
+data/raw/noaa_storm_events/StormEvents_locations_2025.csv.gz,1216277,NOAA Storm Events,locations,StormEvents_locations-ftp_v1.0_d2025_c20260323.csv.gz,cached,https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/StormEvents_locations-ftp_v1.0_d2025_c20260323.csv.gz,2025
+

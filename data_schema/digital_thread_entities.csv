@@ -1,0 +1,7 @@
+entity,source_archive,time_key,state_role,quality_check,main_relation
+AirportHour,Harmonized airport-hour panel,airport UTC hour,Common analysis unit,airport month and hour alignment,anchors all source records
+PhysicalObservation,IEM ASOS hourly weather,weather valid time,Local operating context,airport and neighboring-station weather agreement,observed at AirportHour
+TrafficManagementAction,FAA ATCSCC advisory archive,issue start end and cancellation times,Observed management action trajectory,signature coverage and interval-overlap parsing,acts on AirportHour
+PlannedDemand,BTS schedule-derived operations,scheduled operation time,Planned workload context,scheduled arrival and departure coverage,scheduled for AirportHour
+OutcomeClosure,BTS on-time performance records,realized or cancelled flight record,Realized disruption closure,long-delay cancellation mean-delay and tail-delay fields,closes with AirportHour
+ConstraintState,DCSI output,airport-hour and advisory-event windows,Hidden operating-state estimate,held-out event transfer and negative-control validation,updated by action trajectory

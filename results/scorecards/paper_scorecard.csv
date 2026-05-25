@@ -1,0 +1,19 @@
+evidence,metric,value,status,source_table
+Dynamic scoring,long-delay AUC gain vs baseline,+0.056,reported,dcsi_cv_gains.csv
+Dynamic scoring,cancellation AUC gain vs baseline,+0.099,reported,dcsi_cv_gains.csv
+Dynamic scoring,long-delay AUC gain vs fixed windows,+0.008,reported,dcsi_cv_gains.csv
+Dynamic scoring,cancellation AUC gain vs fixed windows,+0.029,reported,dcsi_cv_gains.csv
+Strong references,relation-augmented long-delay AUC,0.727,reported,kbs_baseline_gains.csv
+Strong references,relation-augmented cancellation AUC,0.778,reported,kbs_baseline_gains.csv
+Paired interval,long-delay DCSI gain vs fixed window,"+0.0084 [+0.0071,+0.0100]",reported,kbs_pair_bootstrap_auc_ci.csv
+Paired interval,cancellation DCSI gain vs fixed window,"+0.0292 [+0.0210,+0.0382]",reported,kbs_pair_bootstrap_auc_ci.csv
+Memory learning,selected rho,0.95 in 12 of 12 outer folds,reported,dcsi_rho_selection.csv
+Memory learning,implied half-life,13.5 h,reported,dcsi_rho_selection.csv
+State closure,long-delay top/bottom decile ratio,5.00,reported,dcsi_deciles.csv
+State closure,cancellation top/bottom decile ratio,13.42,reported,dcsi_deciles.csv
+Event timing,median state peak hour,6,reported,dcsi_event_peak_summary.csv
+Event timing,median long-delay and cancellation peak hour,5/5,reported,dcsi_event_peak_summary.csv
+Semantic memory,largest recovery-state area,weather constraint 72588,reported,dcsi_reason_memory.csv
+Negative control,cancellation real vs reversed AUC,0.769 vs 0.739,reported,dcsi_negative_control_metrics.csv
+Transfer,cross-year gains over fixed windows,+0.007/+0.024,reported,dcsi_transfer_gains.csv
+Transfer,main-to-extension gains over fixed windows,+0.002/+0.012,reported,dcsi_transfer_gains.csv

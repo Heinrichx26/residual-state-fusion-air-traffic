@@ -1,0 +1,32 @@
+airport,artifact,bytes,dataset,month,station,status,url,year
+ATL,data/raw/iem_asos_neighbors/iem_asos_2025_11_ATL_FTY.csv,58907,IEM ASOS,11,FTY,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ATL,data/raw/iem_asos_neighbors/iem_asos_2025_11_ATL_PDK.csv,58833,IEM ASOS,11,PDK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ATL,data/raw/iem_asos_neighbors/iem_asos_2025_11_ATL_HMP.csv,59048,IEM ASOS,11,HMP,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+CLT,data/raw/iem_asos_neighbors/iem_asos_2025_11_CLT_AKH.csv,52632,IEM ASOS,11,AKH,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+CLT,data/raw/iem_asos_neighbors/iem_asos_2025_11_CLT_UZA.csv,58331,IEM ASOS,11,UZA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DEN,data/raw/iem_asos_neighbors/iem_asos_2025_11_DEN_CFO.csv,25243,IEM ASOS,11,CFO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+CLT,data/raw/iem_asos_neighbors/iem_asos_2025_11_CLT_JQF.csv,56519,IEM ASOS,11,JQF,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DEN,data/raw/iem_asos_neighbors/iem_asos_2025_11_DEN_BKF.csv,63591,IEM ASOS,11,BKF,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DEN,data/raw/iem_asos_neighbors/iem_asos_2025_11_DEN_APA.csv,62944,IEM ASOS,11,APA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DFW,data/raw/iem_asos_neighbors/iem_asos_2025_11_DFW_DAL.csv,61579,IEM ASOS,11,DAL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DFW,data/raw/iem_asos_neighbors/iem_asos_2025_11_DFW_ADS.csv,55177,IEM ASOS,11,ADS,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DFW,data/raw/iem_asos_neighbors/iem_asos_2025_11_DFW_GPM.csv,59074,IEM ASOS,11,GPM,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+EWR,data/raw/iem_asos_neighbors/iem_asos_2025_11_EWR_LDJ.csv,58613,IEM ASOS,11,LDJ,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+EWR,data/raw/iem_asos_neighbors/iem_asos_2025_11_EWR_JRB.csv,57736,IEM ASOS,11,JRB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+EWR,data/raw/iem_asos_neighbors/iem_asos_2025_11_EWR_NYC.csv,57892,IEM ASOS,11,NYC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+JFK,data/raw/iem_asos_neighbors/iem_asos_2025_11_JFK_LGA.csv,61177,IEM ASOS,11,LGA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+JFK,data/raw/iem_asos_neighbors/iem_asos_2025_11_JFK_JRB.csv,57736,IEM ASOS,11,JRB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+JFK,data/raw/iem_asos_neighbors/iem_asos_2025_11_JFK_NYC.csv,57892,IEM ASOS,11,NYC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAX,data/raw/iem_asos_neighbors/iem_asos_2025_11_LAX_HHR.csv,59335,IEM ASOS,11,HHR,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAX,data/raw/iem_asos_neighbors/iem_asos_2025_11_LAX_SMO.csv,59108,IEM ASOS,11,SMO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAX,data/raw/iem_asos_neighbors/iem_asos_2025_11_LAX_TOA.csv,32261,IEM ASOS,11,TOA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LGA,data/raw/iem_asos_neighbors/iem_asos_2025_11_LGA_NYC.csv,57892,IEM ASOS,11,NYC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LGA,data/raw/iem_asos_neighbors/iem_asos_2025_11_LGA_JRB.csv,57736,IEM ASOS,11,JRB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LGA,data/raw/iem_asos_neighbors/iem_asos_2025_11_LGA_TEB.csv,58430,IEM ASOS,11,TEB,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ORD,data/raw/iem_asos_neighbors/iem_asos_2025_11_ORD_PWK.csv,60052,IEM ASOS,11,PWK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ORD,data/raw/iem_asos_neighbors/iem_asos_2025_11_ORD_MDW.csv,62452,IEM ASOS,11,MDW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+ORD,data/raw/iem_asos_neighbors/iem_asos_2025_11_ORD_06C.csv,60431,IEM ASOS,11,06C,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos_neighbors/iem_asos_2025_11_SFO_HAF.csv,58378,IEM ASOS,11,HAF,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos_neighbors/iem_asos_2025_11_SFO_SQL.csv,47494,IEM ASOS,11,SQL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos_neighbors/iem_asos_2025_11_SFO_OAK.csv,60924,IEM ASOS,11,OAK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+

@@ -1,0 +1,15 @@
+field,definition,role
+airport,Airport identifier,categorical key
+utc_hour,Coordinated Universal Time airport-hour,temporal key
+arrivals,Scheduled arrival count,outcome denominator
+arr_delay60_count,Arrivals delayed at least 60 min,long-delay outcome
+cancel_count,Cancelled arrivals,cancellation outcome
+weather_score,Surface-weather severity score,weather feature
+mild_weather_abs,Mild local surface-weather indicator,state feature
+scheduled_arrivals,Scheduled arrivals in airport-hour,demand feature
+scheduled_departures,Scheduled departures in airport-hour,demand feature
+arrival_bank_intensity,Arrival-bank intensity relative to airport-month mean,demand feature
+departure_bank_intensity,Departure-bank intensity relative to airport-month mean,demand feature
+active_minutes,GDP or GS overlap minutes during active interval,advisory feature
+post_3h_minutes,GDP or GS overlap minutes in active plus 3 h window,advisory feature
+residual_score,Fusion predicted risk minus weather-demand baseline risk,state score

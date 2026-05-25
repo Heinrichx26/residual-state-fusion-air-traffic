@@ -1,0 +1,32 @@
+airport,artifact,bytes,dataset,month,station,status,url,year
+ATL,data/raw/iem_asos/iem_asos_2024_11_ATL.csv,61829,IEM ASOS,11,ATL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+CLT,data/raw/iem_asos/iem_asos_2024_11_CLT.csv,61460,IEM ASOS,11,CLT,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+DEN,data/raw/iem_asos/iem_asos_2024_11_DEN.csv,63663,IEM ASOS,11,DEN,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+DFW,data/raw/iem_asos/iem_asos_2024_11_DFW.csv,61526,IEM ASOS,11,DFW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+EWR,data/raw/iem_asos/iem_asos_2024_11_EWR.csv,60863,IEM ASOS,11,EWR,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+JFK,data/raw/iem_asos/iem_asos_2024_11_JFK.csv,61303,IEM ASOS,11,JFK,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+LAX,data/raw/iem_asos/iem_asos_2024_11_LAX.csv,60995,IEM ASOS,11,LAX,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+LGA,data/raw/iem_asos/iem_asos_2024_11_LGA.csv,60993,IEM ASOS,11,LGA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+ORD,data/raw/iem_asos/iem_asos_2024_11_ORD.csv,62485,IEM ASOS,11,ORD,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+BOS,data/raw/iem_asos/iem_asos_2025_11_BOS.csv,60314,IEM ASOS,11,BOS,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SFO,data/raw/iem_asos/iem_asos_2024_11_SFO.csv,61276,IEM ASOS,11,SFO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2024
+BWI,data/raw/iem_asos/iem_asos_2025_11_BWI.csv,61330,IEM ASOS,11,BWI,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DCA,data/raw/iem_asos/iem_asos_2025_11_DCA.csv,61588,IEM ASOS,11,DCA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+DTW,data/raw/iem_asos/iem_asos_2025_11_DTW.csv,62248,IEM ASOS,11,DTW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+FLL,data/raw/iem_asos/iem_asos_2025_11_FLL.csv,60530,IEM ASOS,11,FLL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+HNL,data/raw/iem_asos/iem_asos_2025_11_HNL.csv,62247,IEM ASOS,11,PHNL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+IAD,data/raw/iem_asos/iem_asos_2025_11_IAD.csv,61103,IEM ASOS,11,IAD,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+IAH,data/raw/iem_asos/iem_asos_2025_11_IAH.csv,60553,IEM ASOS,11,IAH,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+LAS,data/raw/iem_asos/iem_asos_2025_11_LAS.csv,62090,IEM ASOS,11,LAS,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MCO,data/raw/iem_asos/iem_asos_2025_11_MCO.csv,60482,IEM ASOS,11,MCO,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MDW,data/raw/iem_asos/iem_asos_2025_11_MDW.csv,62452,IEM ASOS,11,MDW,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MIA,data/raw/iem_asos/iem_asos_2025_11_MIA.csv,60169,IEM ASOS,11,MIA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+MSP,data/raw/iem_asos/iem_asos_2025_11_MSP.csv,62144,IEM ASOS,11,MSP,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+PHL,data/raw/iem_asos/iem_asos_2025_11_PHL.csv,61032,IEM ASOS,11,PHL,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+PHX,data/raw/iem_asos/iem_asos_2025_11_PHX.csv,61678,IEM ASOS,11,PHX,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+RDU,data/raw/iem_asos/iem_asos_2025_11_RDU.csv,61224,IEM ASOS,11,RDU,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SAN,data/raw/iem_asos/iem_asos_2025_11_SAN.csv,60742,IEM ASOS,11,SAN,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SEA,data/raw/iem_asos/iem_asos_2025_11_SEA.csv,62956,IEM ASOS,11,SEA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+SLC,data/raw/iem_asos/iem_asos_2025_11_SLC.csv,63678,IEM ASOS,11,SLC,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+TPA,data/raw/iem_asos/iem_asos_2025_11_TPA.csv,59349,IEM ASOS,11,TPA,cached,https://mesonet.agron.iastate.edu/cgi-bin/request/asos.py,2025
+

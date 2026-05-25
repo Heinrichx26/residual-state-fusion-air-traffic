@@ -1,0 +1,21 @@
+source,field,meaning,unit_or_format,role
+BTS On-Time Performance,airport,arrival airport code,IATA code,location key
+BTS On-Time Performance,scheduled_arrivals,scheduled arrivals in the airport-hour,count,planned demand
+BTS On-Time Performance,long_arrival_delay,arrival delay at or above 60 minutes,binary or rate,outcome closure
+BTS On-Time Performance,cancelled,cancelled flight indicator,binary or rate,outcome closure
+IEM ASOS,valid,weather observation timestamp,UTC timestamp,physical observation
+IEM ASOS,visibility,reported visibility,miles or kilometers after harmonization,physical observation
+IEM ASOS,wind_speed,reported wind speed,knots or meters per second after harmonization,physical observation
+IEM ASOS,ceiling,cloud ceiling,feet or meters after harmonization,physical observation
+IEM ASOS,temperature,air temperature,degree C,physical observation
+FAA ATCSCC,signature_time,advisory signature timestamp,UTC timestamp,action availability
+FAA ATCSCC,start_time,advisory effective start,UTC timestamp,action interval
+FAA ATCSCC,end_time,advisory effective end,UTC timestamp,action interval
+FAA ATCSCC,advisory_type,Ground Delay Program or Ground Stop,GDP or GS,action type
+FAA ATCSCC,active_minutes,minutes of advisory overlap in an airport-hour,0 to 60 minutes,action impulse
+DCSI,dynamic_constraint_state,inferred persistent constraint state,unitless state,hidden state estimate
+DCSI,dynamic_recovery_state,constraint state after removing current-hour impulse,unitless state,recovery estimate
+DCSI,dynamic_mild_state,constraint state during mild local weather,unitless state,contextualized state
+DCSI,dynamic_state_delta,hourly increment in dynamic constraint state,unitless state change,state update
+NOAA Storm Events,event_time,storm event timestamp,UTC timestamp,weather-event filter
+NOAA Storm Events,event_type,storm event category,text,weather-event filter

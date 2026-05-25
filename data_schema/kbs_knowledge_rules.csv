@@ -1,0 +1,7 @@
+rule_id,knowledge_rule,purpose
+R1,ManagementAction updatesState ConstraintState.,prevents outcome leakage into state construction
+R2,PhysicalObservation contextualizesState ConstraintState.,keeps physical context separate from action impulses
+R3,PlannedDemand contextualizesState ConstraintState.,keeps workload context separate from action impulses
+R4,OutcomeClosure validates ConstraintState.,keeps delayed outcomes outside state recursion
+R5,ManagementAction hasReason ReasonFamily.,adds semantic mechanism interpretation
+R6,Negative controls disturb airport or time relation while preserving broad exposure.,tests action-link specificity
