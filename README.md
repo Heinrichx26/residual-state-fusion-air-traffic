@@ -1,10 +1,10 @@
-# Dynamic Constraint-State Inversion for Air Traffic Disruption Recognition
+# A Decision-Support Artifact for Air Traffic Disruption Monitoring
 
 This repository contains source-data instructions, field schemas, split definitions, analysis code, archived result tables, and figure scripts for:
 
-**Dynamic Constraint-State Inversion for Interpretable Air Traffic Disruption Recognition from Public Operational Records**
+**A Decision-Support Artifact for Air Traffic Disruption Monitoring: Dynamic Constraint-State Inversion from Public Operational Records**
 
-The package organizes public air traffic records into a timestamp-admissible monitoring artifact. The artifact links physical observations, traffic-management action records, planned workload, semantic advisory reasons, inferred dynamic constraint states, alert rankings, and flight-outcome closure for airport-hour and advisory-event monitoring.
+The package organizes public air traffic records into a timestamp-admissible decision-support artifact. The artifact links physical observations, traffic-management action records, planned workload, semantic advisory reasons, inferred dynamic constraint states, alert rankings, review-workload outputs, routine-monitoring triage, and flight-outcome closure for airport-hour and advisory-event monitoring.
 
 ## Data sources
 
