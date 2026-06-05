@@ -20,7 +20,7 @@ PROJECT = Path(__file__).resolve().parents[2]
 
 
 def set_project_root(project_root: str | Path | None) -> Path:
-    """Point analysis scripts at a reconstructed project root when data live outside this release package."""
+    """Point analysis scripts at a reconstructed project root when data live outside this reproduction package."""
     global PROJECT, ROOT_OUT, RAW_ADVISORY, MAIN_2025_PANEL, MAIN_2024_PANEL, EXTENDED_2025_PANEL
     root = project_root or os.environ.get("DCSI_PROJECT_ROOT")
     PROJECT = Path(root).resolve() if root else Path(__file__).resolve().parents[2]

@@ -1,0 +1,7 @@
+query_id,feedback_policy,prior_priority,posterior_priority,reasoning_effect
+Q1,P3,candidate,active,state decile closure becomes a retained monitoring query
+Q2,"P3,P6",candidate,active,semantic recovery memory remains available as a mechanism query
+Q3,P4,candidate,active,online issue/start/current-hour view is retained
+Q4,P5,candidate,active,airport-time action specificity remains part of the state audit
+Q5,P6,candidate,diagnostic,cross-year transfer is retained; airport extension remains a stress diagnostic
+Q6,"P1,P2,P3,P4,P5,P6",candidate,active,run-level feedback record summarizes the active rule set

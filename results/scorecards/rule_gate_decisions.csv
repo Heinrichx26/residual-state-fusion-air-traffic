@@ -1,0 +1,7 @@
+gate_id,rule_gate,evidence_value,gate_status,enabled_output
+G1,source-role admissibility,6539 retained actions and zero parser issue rows,active,state reconstruction table
+G2,fold-memory promotion,rho=0.95 in 12/12 folds,active,current and recovery state components
+G3,closure-ranking promotion,top-to-bottom closure ratios 5.00/13.42,active,decile closure query
+G4,timestamp-admissible online promotion,positive paired differences at 1/3/6 h,active,online monitoring query
+G5,action-path specificity,real cancellation AUC 0.769; rotated 0.748; reversed 0.739,active,airport-time action-link query
+G6,partition reuse,cross-year +0.007/+0.024; spatial +0.002/+0.012,active-diagnostic,transfer query and spatial stress diagnostic

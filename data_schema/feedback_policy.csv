@@ -1,0 +1,7 @@
+policy_id,evidence_input,gate_condition,state_or_query_effect,next_operator_set
+P1,source coverage and parser audit,all source families complete and retained parser issue rows equal zero,open source-role gate for state reconstruction,"O1,O2,O3"
+P2,fold-wise memory selection,same long-memory region selected in the validation folds,promote fold-selected memory to the state update rule,"O3,O5"
+P3,state decile closure,top-to-bottom closure ratios exceed one for delay and cancellation,activate recovery-state ranking query,"O5,O8"
+P4,online lead-time validation,"paired online differences remain positive at 1, 3, and 6 h",activate timestamp-admissible online monitoring query,"O2,O3,O5,O8"
+P5,airport-rotated and time-reversed controls,control AUC values fall below the real action path,activate airport-time action-link rule,"O6,O8"
+P6,cross-year and airport-partition checks,partition differences retain positive direction,activate partition-reuse query and mark spatial stress as diagnostic,"O7,O8"

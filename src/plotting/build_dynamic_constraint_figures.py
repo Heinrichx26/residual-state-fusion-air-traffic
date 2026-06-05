@@ -221,7 +221,7 @@ def build_event_case() -> None:
     )
     ax_state.annotate("start", xy=(0, 8.2), xytext=(4, 7), textcoords="offset points", ha="left", fontsize=8)
     ax_state.annotate("end", xy=(end_x, 8.2), xytext=(4, 7), textcoords="offset points", ha="left", fontsize=8)
-    ax_state.set_title("Single-event digital-thread timeline: EWR GDP, February 6--7, 2025", loc="center", pad=8)
+    ax_state.set_title("Decision-support case trace: EWR GDP, February 6--7, 2025", loc="center", pad=8)
     ax_state.set_xlabel("Hours from GDP start")
     ax_state.set_ylabel("DCSI state")
     ax_out.set_ylabel("Long-delay rate")

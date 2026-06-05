@@ -1,0 +1,8 @@
+entity,key_attributes,knowledge_role
+AirportHour,"airport, utc_hour",Common temporal object that binds all source records.
+PhysicalObservation,"weather variables, mild-weather class",Observed operating context.
+ManagementAction,"GDP/GS interval, issue/start/end/cancel time",Observed control trajectory.
+PlannedDemand,"scheduled arrivals, bank intensity",Planned workload context.
+OutcomeClosure,"long delay, cancellation, mean/tail delay",Delayed validation evidence.
+ConstraintState,"Z, recovery Z, mild-weather Z, delta Z",Hidden state reconstructed by DCSI.
+ReasonFamily,"weather, demand, runway/surface, facility, other",Semantic mechanism layer.

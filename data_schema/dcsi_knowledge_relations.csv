@@ -1,0 +1,10 @@
+formal_triple,source_entity,relation,target_entity,meaning,used_by
+PhysicalObservation observedAt AirportHour,PhysicalObservation,observedAt,AirportHour,Weather context attaches to the airport-hour node.,context feature
+ManagementAction actsOn AirportHour,ManagementAction,actsOn,AirportHour,Advisory overlap creates the action impulse.,state update
+PlannedDemand scheduledFor AirportHour,PlannedDemand,scheduledFor,AirportHour,Scheduled workload contextualizes expected pressure.,context feature
+OutcomeClosure closesWith AirportHour,OutcomeClosure,closesWith,AirportHour,Later BTS outcomes validate the inferred state.,validation
+ManagementAction hasReason ReasonFamily,ManagementAction,hasReason,ReasonFamily,Parsed reason text provides semantic constraint family.,mechanism layer
+ManagementAction updatesState ConstraintState,ManagementAction,updatesState,ConstraintState,Advisory impulses update the hidden state.,state recursion
+PhysicalObservation contextualizesState ConstraintState,PhysicalObservation,contextualizesState,ConstraintState,Physical observations remain context for scoring and interpretation.,context rule
+ConstraintState recoversAfter ManagementAction,ConstraintState,recoversAfter,ManagementAction,State persistence propagates after active action impulses.,state recursion
+OutcomeClosure validates ConstraintState,OutcomeClosure,validates,ConstraintState,Outcome closure tests state ranking and event timing.,closure rule

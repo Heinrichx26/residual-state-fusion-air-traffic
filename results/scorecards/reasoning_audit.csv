@@ -1,0 +1,10 @@
+reasoning_layer,executed_operator,materialized_result,feedback_record,archived_output
+Typed knowledge closure,O1 source-role typing,"7 entities, 9 relation types, 6 source-role rules, and 20 source fields",schema ready for query execution,data_schema/reasoning_operators.csv
+Admissibility reasoning,O2 admissible update,"12/12 BTS months, 120/120 ASOS airport-months, 365/365 ATCSCC days, 6539 retained action records","update, context, and closure roles admitted",data_schema/reasoning_queries.csv
+State materialization,O3 dynamic state materialization,rho=0.95 selected in 12/12 folds; representative half-life 13.5 h,long-memory state region retained,results/scorecards/dcsi_rho_selection.csv
+Closure reasoning,O5 closure binding,top/bottom ratios 5.00 for long delay and 13.42 for cancellation,state-ranking closure query retained,results/scorecards/dcsi_deciles.csv
+Online reasoning,O2 + O3 + O5 timestamp gate,"1/3/6 h paired differences over online fixed decay: +0.0038/+0.0030, +0.0038/+0.0042, +0.0020/+0.0031",online timestamp gate retained,results/scorecards/online_lead_state_diffs.csv
+Semantic reasoning,O4 semantic specialization,5 reason families; weather recovery-state area 72588; top delay 0.260; top cancellation 0.0697,family-specific mechanism query retained,results/scorecards/dcsi_reason_memory.csv
+Action-path reasoning,O6 action-path specificity,real cancellation AUC 0.769; airport-rotated 0.748; time-reversed 0.739,airport-time action link retained,results/scorecards/dcsi_negative_control_metrics.csv
+Transfer reasoning,O7 partition reuse,cross-year differences +0.007/+0.024; spatial stress differences +0.002/+0.012,source-role object retained across partitions,results/scorecards/dcsi_transfer_gains.csv
+Feedback loop,O8 feedback update,21 scorecard rows update rule status and query priority,run-level reasoning status archived,results/scorecards/knowledge_feedback_actions.csv

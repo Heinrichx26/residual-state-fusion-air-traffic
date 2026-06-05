@@ -1,0 +1,7 @@
+query_id,engineering_query,schema_fields,operator_chain,returned_evidence,feedback_action
+Q1,Find airport-hours in high recovery state after action closure,"AirportHour, ConstraintState.recovery_Z, OutcomeClosure",O3 -> O5,top/bottom ratios 5.00 and 13.42,retain recovery-state closure query
+Q2,Identify semantic reason families with persistent recovery memory,"ManagementAction.reason, ReasonFamily, ConstraintState.recovery_Z",O4 -> O5,weather recovery-state area 72588; top delay 0.260,retain family-specific mechanism query
+Q3,Check states available before delayed outcome closure,"issue time, start time, current hour, online Z, OutcomeClosure",O2 -> O3 -> O5,1/3/6 h paired differences remain positive,retain timestamp-admissible online gate
+Q4,Check airport-time action-path specificity,"ManagementAction.airport, ManagementAction.time, ConstraintState, OutcomeClosure",O6 -> O5,"cancellation AUC 0.769 real, 0.748 rotated, 0.739 reversed",retain airport-time action link
+Q5,Check reuse of the state object across partitions,"split_id, AirportHour, ConstraintState, OutcomeClosure",O7 -> O5,cross-year differences +0.007/+0.024; spatial stress +0.002/+0.012,retain common source-role object across partitions
+Q6,Summarize evidence for the reconstructed state object,paper scorecard rows and validation split identifiers,O1 -> O8,21 scorecard rows and 8 validation split definitions,update run-level validation status

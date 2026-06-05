@@ -1,0 +1,7 @@
+feedback_id,trigger_evidence,rule_status,system_action
+F1,source audit complete and zero retained-interval parser issue rows,source-role rules active,admit the airport-hour thread for state reconstruction
+F2,rho=0.95 selected in 12/12 folds,memory selection active,use fold-selected recovery memory for DCSI state updates
+F3,top/bottom ratios 5.00 and 13.42,closure-ranking query active,retain state decile closure as a monitoring diagnostic
+F4,online 1/3/6 h paired differences remain positive,timestamp gate active,retain issue/start/current-hour online monitoring view
+F5,cancellation AUC decreases under airport-rotated and time-reversed action paths,action-path specificity active,retain airport-time action link in reasoning closure
+F6,cross-year and spatial stress differences remain positive,partition-reuse query active,retain common source-role object across validation partitions

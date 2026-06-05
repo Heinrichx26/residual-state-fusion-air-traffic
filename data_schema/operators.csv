@@ -1,0 +1,9 @@
+operator_id,operator,input_entities,rule_expression,materialized_output,validation_use
+O1,source-role typing,"source fields, entity classes",ArchiveField -> Entity(role),"7 entities, 20 source fields",builds the typed airport-hour record
+O2,admissible update,"ManagementAction, AirportHour","actsOn plus available(issue,start,current-hour) -> admissible_update",GDP/GS active overlap impulse,creates timestamp-admissible state updates
+O3,dynamic state materialization,"admissible_update, ConstraintState","admissible_update -> Z, recovery Z, mild-weather Z, delta Z",state vector for each airport-hour,"supports scoring, decile closure, and event timing"
+O4,semantic specialization,"ManagementAction, ReasonFamily",hasReason -> family-specific action impulse,"weather, demand, runway or surface, facility, and other states",explains mechanism-specific recovery memory
+O5,closure binding,"ConstraintState, OutcomeClosure",validatedBy -> closure evidence,"state deciles, event timing, and outcome gradients",tests the inferred state after outcomes close
+O6,action-path specificity,"ManagementAction, AirportHour, OutcomeClosure",rotate or reverse action path -> control state,airport-rotated and time-reversed control scorecards,tests airport-time relation specificity
+O7,partition reuse,"split definitions, source-role schema",schema plus split -> transfer state,cross-year and airport-group transfer scorecards,checks reuse of the same state object across partitions
+O8,feedback update,"closure evidence, control evidence, transfer evidence",validation evidence -> rule status and query priority,9 relation types and 6 rules linked to feedback actions,records which source-role rules remain active after closure checks
