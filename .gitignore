@@ -5,6 +5,10 @@ Thumbs.db
 article/
 raw/
 data/raw/
+!data/raw/
+data/raw/*
+!data/raw/ourairports/
+!data/raw/ourairports/airports.csv
 *.zip
 *.gz
 *.html

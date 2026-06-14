@@ -1,6 +1,6 @@
 {
   "schema_name": "dcsi_airport_hour_knowledge_object",
-  "description": "Machine-readable fields for the DCSI public-record decision-support airport-hour object.",
+  "description": "Legacy machine-readable fields retained for the earlier public-record airport-hour monitoring artifact.",
   "primary_key": ["airport", "utc_hour"],
   "entities": {
     "AirportHour": ["airport", "utc_hour", "month", "local_hour", "day_of_week"],

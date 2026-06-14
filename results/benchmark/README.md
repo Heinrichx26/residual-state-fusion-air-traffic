@@ -1,6 +1,8 @@
-# DCSI monitoring benchmark
+# Earlier public-record monitoring benchmark
 
-This benchmark defines reusable airport-hour tasks for dynamic constraint-state inversion in air traffic disruptions. It uses flight outcomes, surface weather, schedule-derived demand, ATCSCC advisory action trajectories, inferred DCSI states, and realized outcomes.
+This directory retains earlier airport-hour benchmark tables used for provenance and compatibility with the public-record monitoring artifact. The CQS-Rank manuscript-facing outputs are stored under `results/cqs_rank/`.
+
+The benchmark defines reusable airport-hour tasks for action-state monitoring in air traffic disruptions. It uses flight outcomes, surface weather, schedule-derived demand, ATCSCC advisory action trajectories, inferred action states, and realized outcomes.
 
 Core tasks:
 - dynamic constraint-state monitoring;
@@ -9,4 +11,4 @@ Core tasks:
 - action-trajectory negative controls;
 - transfer validation.
 
-The benchmark tables define fields, task targets, split rules, and baseline scores. Plotting and reported tables read archived DCSI result tables directly.
+The benchmark tables define fields, task targets, split rules, and reference scores. Plotting and legacy provenance checks read these archived tables directly.

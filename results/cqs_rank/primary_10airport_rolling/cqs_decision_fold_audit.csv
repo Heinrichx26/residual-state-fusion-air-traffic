@@ -1,0 +1,10 @@
+target,reference_model,queue_fraction,fold_id,cqs_events,reference_events,event_gain,event_capture_gain
+long_arrival_delay,RAEG-Rank,0.1,rolling_q04_06,25875.0,22247.0,3628.0,0.06640553501482593
+long_arrival_delay,RAEG-Rank,0.1,rolling_q07_09,23252.0,19844.0,3408.0,0.06650534696744985
+long_arrival_delay,RAEG-Rank,0.1,rolling_q10_12,20773.0,18278.0,2495.0,0.054701716691149066
+severe_arrival_delay,RAEG-Rank,0.1,rolling_q04_06,12487.0,11318.0,1169.0,0.047366288492706646
+severe_arrival_delay,RAEG-Rank,0.1,rolling_q07_09,10862.0,9750.0,1112.0,0.04847850728049525
+severe_arrival_delay,RAEG-Rank,0.1,rolling_q10_12,9728.0,8747.0,981.0,0.04861730597680642
+cancellation,RAEG-Rank,0.1,rolling_q04_06,5606.0,5410.0,196.0,0.024825839138695377
+cancellation,RAEG-Rank,0.1,rolling_q07_09,6589.0,6224.0,365.0,0.039851512173818104
+cancellation,RAEG-Rank,0.1,rolling_q10_12,6911.0,6413.0,498.0,0.05133491392639934

@@ -1,6 +1,6 @@
 {
-  "schema_name": "dcsi_airport_hour_knowledge_object",
-  "description": "Machine-readable fields for the DCSI public-record decision-support airport-hour object.",
+  "schema_name": "public_record_airport_hour_monitoring_object",
+  "description": "Machine-readable fields for the public-record airport-hour monitoring object used by the CQS-Rank release package.",
   "primary_key": ["airport", "utc_hour"],
   "entities": {
     "AirportHour": ["airport", "utc_hour", "month", "local_hour", "day_of_week"],

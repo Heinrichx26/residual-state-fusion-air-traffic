@@ -1,0 +1,10 @@
+target,reference_model,queue_fraction,traffic_stratum,low_max_arrivals,mid_max_arrivals,cqs_selected,reference_selected,cqs_events,reference_events,event_gain,event_capture_gain,cqs_excess_delay60_minutes,reference_excess_delay60_minutes
+long_arrival_delay,RAEG-Rank,0.1,low,18.0,34.0,641,2008,5447.0,9919.0,-4472.0,-0.02952029520295203,564455.0,939749.0
+long_arrival_delay,RAEG-Rank,0.1,mid,18.0,34.0,1283,1731,14032.0,16327.0,-2295.0,-0.015149614823518539,1267780.0,1438659.0
+long_arrival_delay,RAEG-Rank,0.1,high,18.0,34.0,3381,1566,50407.0,34525.0,15882.0,0.10483929526236228,4671830.0,3249216.0
+severe_arrival_delay,RAEG-Rank,0.1,low,18.0,34.0,700,1887,3416.0,4948.0,-1532.0,-0.022597203374830375,631524.0,924836.0
+severe_arrival_delay,RAEG-Rank,0.1,mid,18.0,34.0,1137,1683,6674.0,7747.0,-1073.0,-0.01582689244203198,1221660.0,1443781.0
+severe_arrival_delay,RAEG-Rank,0.1,high,18.0,34.0,3468,1735,23135.0,17313.0,5822.0,0.0858752728774559,4689522.0,3369857.0
+cancellation,RAEG-Rank,0.1,low,18.0,34.0,940,2072,2065.0,2641.0,-576.0,-0.02152868622687348,573355.0,776409.0
+cancellation,RAEG-Rank,0.1,mid,18.0,34.0,1567,1773,5221.0,5397.0,-176.0,-0.0065782096804335635,1121042.0,1193466.0
+cancellation,RAEG-Rank,0.1,high,18.0,34.0,2798,1460,11842.0,10004.0,1838.0,0.06869743973089142,3659013.0,2278956.0
